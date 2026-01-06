@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Relatos mitológicos del mundo</title>
+  <style>
+    :root{ color-scheme: light; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#fff;
+      color:#0f172a;
+    }
+    main{
+      max-width:1200px;
+      margin:0 auto;
+      padding:24px 16px 44px;
+    }
+    h1{
+      margin:0 0 18px;
+      font-size:clamp(22px, 3vw, 32px);
+      letter-spacing:-.02em;
+    }
+
+    /* Galería: 3 por fila; última fila se adapta a 1 o 2 */
+    .gallery{ display:flex; flex-direction:column; gap:14px; }
+    .row{ display:flex; gap:14px; align-items:stretch; }
+    .cell{ flex:1 1 0; min-width:0; }
+    .row.row-1 .cell{ flex-basis:100%; }
+    .row.row-2 .cell{ flex-basis:50%; }
+
+    .card{
+      display:block;
+      text-decoration:none;
+      border-radius:16px;
+      overflow:hidden;
+      background:#fff;
+      box-shadow:0 10px 26px rgba(15,23,42,.10);
+      transition: transform .15s ease, box-shadow .15s ease;
+      height:100%;
+    }
+    .card:hover{
+      transform: translateY(-1px);
+      box-shadow:0 14px 34px rgba(15,23,42,.14);
+    }
+    .card img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+    .caption{
+      padding:10px 12px 12px;
+      font-weight:700;
+      font-size:14px;
+      line-height:1.25;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Relatos mitológicos del mundo</h1>
+
+    <section class="gallery" aria-label="Galería de relatos">
+      <!-- Fila 1 -->
+      <div class="row row-3">
+        <div class="cell">
+          <a class="card" href="Prologo-El-Poder-de-los-Mitos.html">
+            <img src="00-Prologo-El-Poder-de-los-Mitos.jpg" alt="Prólogo El Poder de los Mitos">
+            <div class="caption">Prólogo El Poder de los Mitos</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="El-Sueno-de-Alceon.html">
+            <img src="01-El-Sueno-de-Alceon.jpg" alt="El Sueño de Alceón">
+            <div class="caption">El Sueño de Alceón</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="El-Espejo-de-Amaterasu.html">
+            <img src="02-El-Espejo-de-Amaterasu.jpg" alt="El Espejo de Amaterasu">
+            <div class="caption">El Espejo de Amaterasu</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Fila 2 -->
+      <div class="row row-3">
+        <div class="cell">
+          <a class="card" href="El-Vuelo-del-Cuervo-Creador.html">
+            <img src="03-El-Vuelo-del-Cuervo-Creador.jpg" alt="El Vuelo del Cuervo Creador">
+            <div class="caption">El Vuelo del Cuervo Creador</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="El-Engano-de-Loki.html">
+            <img src="04-El-Engano-de-Loki.jpg" alt="El Engaño de Loki">
+            <div class="caption">El Engaño de Loki</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="Arjuna-y-la-Flecha-Dorada.html">
+            <img src="05-Arjuna-y-la-Flecha-Dorada.jpg" alt="Arjuna y la Flecha Dorada">
+            <div class="caption">Arjuna y la Flecha Dorada</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Fila 3 -->
+      <div class="row row-3">
+        <div class="cell">
+          <a class="card" href="Anansi-y-el-Tesoro-de-la-Sabiduria.html">
+            <img src="06-Anansi-y-el-Tesoro-de-la-Sabiduria.jpg" alt="Anansi y el Tesoro de la Sabiduría">
+            <div class="caption">Anansi y el Tesoro de la Sabiduría</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="Change-y-el-Elixir-de-la-Eternidad.html">
+            <img src="07-Change-y-el-Elixir-de-la-Eternidad.jpg" alt="Chang’e y el Elixir de la Eternidad">
+            <div class="caption">Chang’e y el Elixir de la Eternidad</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="Quetzalcoatl-y-el-Regreso-del-Maiz.html">
+            <img src="08-Quetzalcoatl-y-el-Regreso-del-Maiz.jpg" alt="Quetzalcóatl y el Regreso del Maíz">
+            <div class="caption">Quetzalcóatl y el Regreso del Maíz</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Fila 4 -->
+      <div class="row row-3">
+        <div class="cell">
+          <a class="card" href="Horus-y-el-Trono-de-Egipto.html">
+            <img src="09-Horus-y-el-Trono-de-Egipto.jpg" alt="Horus y el Trono de Egipto">
+            <div class="caption">Horus y el Trono de Egipto</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="Cu-Chulainn-y-el-Juramento-de-Sangre.html">
+            <img src="10-Cu-Chulainn-y-el-Juramento-de-Sangre.jpg" alt="Cú Chulainn y el Juramento de Sangre">
+            <div class="caption">Cú Chulainn y el Juramento de Sangre</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="Maui-y-el-Sol-Fugitivo.html">
+            <img src="11-Maui-y-el-Sol-Fugitivo.jpg" alt="Maui y el Sol Fugitivo">
+            <div class="caption">Maui y el Sol Fugitivo</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Fila 5 -->
+      <div class="row row-3">
+        <div class="cell">
+          <a class="card" href="Tenger-el-Espiritu-del-Cielo-Eterno.html">
+            <img src="12-Tenger-el-Espiritu-del-Cielo-Eterno.jpg" alt="Tenger, el Espíritu del Cielo Eterno">
+            <div class="caption">Tenger, el Espíritu del Cielo Eterno</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="El-Canto-de-la-Serpiente-Arcoiris.html">
+            <img src="13-El-Canto-de-la-Serpiente-Arcoiris.jpg" alt="El Canto de la Serpiente Arcoíris">
+            <div class="caption">El Canto de la Serpiente Arcoíris</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="El-Destino-de-Rostam-y-Sohrab.html">
+            <img src="14-El-Destino-de-Rostam-y-Sohrab.jpg" alt="El Destino de Rostam y Sohrab">
+            <div class="caption">El Destino de Rostam y Sohrab</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Fila 6 -->
+      <div class="row row-3">
+        <div class="cell">
+          <a class="card" href="El-Secreto-de-Koschei-el-Inmortal.html">
+            <img src="15-El-Secreto-de-Koschei-el-Inmortal.jpg" alt="El Secreto de Koschei el Inmortal">
+            <div class="caption">El Secreto de Koschei el Inmortal</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="Viracocha-y-los-Lagos-de-Vida.html">
+            <img src="16-Viracocha-y-los-Lagos-de-Vida.jpg" alt="Viracocha y los Lagos de Vida">
+            <div class="caption">Viracocha y los Lagos de Vida</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="Koschei-el-Inmortal-y-el-Secreto-del-Alma.html">
+            <img src="17-Koschei-el-Inmortal-y-el-Secreto-del-Alma.jpg" alt="Koschei el Inmortal y el Secreto del Alma">
+            <div class="caption">Koschei el Inmortal y el Secreto del Alma</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Fila 7 -->
+      <div class="row row-3">
+        <div class="cell">
+          <a class="card" href="Pele-la-Diosa-del-Volcan-y-la-Danza-del-Fuego-Eterno.html">
+            <img src="19-Pele-la-Diosa-del-Volcan-y-la-Danza-del-Fuego-Eterno.jpg" alt="Pele, la Diosa del Volcán">
+            <div class="caption">Pele, la Diosa del Volcán</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="Gilgamesh-y-el-Jardin-de-los-Dioses.html">
+            <img src="20-Gilgamesh-y-el-Jardin-de-los-Dioses.jpg" alt="Gilgamesh y el Jardín de los Dioses">
+            <div class="caption">Gilgamesh y el Jardín de los Dioses</div>
+          </a>
+        </div>
+        <div class="cell">
+          <a class="card" href="Bakunawa.html">
+            <img src="21-Bakunawa.jpg" alt="Bakunawa">
+            <div class="caption">Bakunawa</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Última fila (1 elemento) -->
+      <div class="row row-1">
+        <div class="cell">
+          <a class="card" href="Epilogo-El-Legado-de-los-Mitos.html">
+            <img src="0-Epilogo-El-Legado-de-los-Mitos.jpg" alt="Epílogo El Legado de los Mitos">
+            <div class="caption">Epílogo El Legado de los Mitos</div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
